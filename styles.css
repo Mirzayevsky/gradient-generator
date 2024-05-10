@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 3px 4px 12px lightblue;
+
+}
+.container .title{
+    color: #e5dfdf;
+    font-size: 32px;
+    font-weight: 600;
+}
