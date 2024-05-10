@@ -1,6 +1,7 @@
 const body = document.querySelector('body')
 const container = document.querySelector('.container')
 const colorText = document.querySelector('.color-text')
+const auto = document.querySelector('.btn-auto')
 const values = [
   '0',
   '1',
@@ -45,6 +46,10 @@ function setGradient() {
   colorText.textContent = bgColor
 }
 
-setGradient()
 
 container.addEventListener('click', setGradient)
+auto.addEventListener('click', () => {
+        setInterval(()=>{
+            setGradient()
+        },500)
+})
